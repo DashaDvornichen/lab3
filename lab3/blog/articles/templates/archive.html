@@ -5,6 +5,7 @@
 
 </div>
 <div class="archive">
+    {% for post in posts %}
     <div class="one-post">
         <h2 class="post-title">{{ post.title }}</h2>
         <div class="article-info">
@@ -12,6 +13,6 @@
             <div class="article-created-date">{{ post.created_date }}</div>
         </div>    <p class="article-text">{{ post.get_excerpt }}</p>
     </div>
-
+{% endfor %}
 </div>
 </body>

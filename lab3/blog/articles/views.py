@@ -4,4 +4,4 @@ from django import template
 
 
 def archive(request):
-    return render(request, "templates/archive.html", {"posts": Article.objects.all()})
+    return render(request, "archive.html", {"posts": Article.objects.all()})
